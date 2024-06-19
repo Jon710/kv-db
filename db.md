@@ -1,4 +1,5 @@
 This is a simple disk-based key-value database.
+
 Pages are the smallest unit of data exchanged by a db and the disk. Related data is put in proximity so it can be fetched all at once. (PG has a default page size of 8kb)
 DB pages are stored contiguously on the disk to minimize disk seeks.
 DBs use different data structures to organize pages on the disk. This uses B-Tree since it's easier to implement.
